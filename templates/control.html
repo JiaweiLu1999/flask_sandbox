@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Control Statement
+{% endblock %}
+
+{% block body %}
+    {% if age > 18 %}
+        <div>Good!</div>
+    {% elif age < 18 %}
+        <div>Oops!</div>
+    {% else %}
+        <div>=18</div>
+    {% endif %}
+    <ul>
+        {% for book in books %}
+        <li>{{ book }}</li>
+        {% endfor %}
+    </ul>
+
+    {% for key, val in people.items() %}
+        <div>{{ key }} : {{ val }}</div>
+    {% endfor %}
+{% endblock %}
