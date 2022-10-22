@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+  J's Web - Register
+{% endblock %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+  <div class="row mt-4">
+    <div class="col">
+    </div>
+    <div class="col">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp"
+                 placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="exampleInputVerification">Verification</label>
+          <div class="input-group">
+            <input type="text" class="form-control" id="exampleInputVerification" aria-describedby="verifyHelp"
+                   placeholder="Enter code">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button">Get Code</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="exampleInputPassword1">Re-enter Password</label>
+          <input type="password" class="form-control mt-1" id="exampleInputPassword2" placeholder="Password">
+        </div>
+
+        <div class="form-check mt-2">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <div class="d-grid mt-2">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+
+
+      </form>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+{% endblock %}

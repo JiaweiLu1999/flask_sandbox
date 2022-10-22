@@ -3,3 +3,4 @@
 __pycache__/
 apps/__pychache__/
 migrations/
+config.py
